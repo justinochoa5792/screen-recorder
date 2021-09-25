@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Screen Recorder</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div>
+          <h1>Screen Recorder</h1>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <div>
+        <h2>Video recorder</h2>
+
+        <video src="" autplay class="video-feedback"></video>
+
+        <div class="btn-container">
+          <button class="start-recording">Record Screen</button>
+          <button class="stop-recording" disabled>Stop Recording</button>
+        </div>
+
+        <div class="recorded-video-wrap hidden">
+          <h2 class="text-xl text-gray-500 uppercase font-light mb-4">
+            Recorded video
+          </h2>
+
+          <video src="" class="recorded-video"></video>
+          <div>
+            <a class="download-video" disabled> Download </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
